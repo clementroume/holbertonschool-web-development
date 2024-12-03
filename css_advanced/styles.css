@@ -78,6 +78,8 @@ header {
 }
 
 #pros {
+  width: 1009px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
