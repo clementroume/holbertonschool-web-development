@@ -1,6 +1,6 @@
 # HTML Advanced - Holberton School
 
-Welcome to the **HTML Advanced** project repository! This project is part of the **Holberton School Web Development**curriculum, focused on building webpages using semantic HTML, based on a designer's specifications.
+Welcome to the **HTML Advanced** project repository! This project is part of the **Holberton School Web Development** curriculum, focused on building webpages using semantic HTML, based on a designer's specifications.
 
 ---
 
