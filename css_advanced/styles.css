@@ -1,4 +1,4 @@
-/* General reset for consistency */
+/*General reset for consistency*/
 *,
 ::before,
 ::after {
@@ -7,29 +7,82 @@
   box-sizing: border-box;
 }
 
-:root {
-  /* colors */
-  --white: #ffffff;
-  --purple: #c271ff;
-  --black: #071629;
-  --black-gradient: linear-gradient(90deg, #071629 50%, transparent 50%);
-  --grey: #d8d8d8;
-  --black: #000000;
+/*General Class Selectors*/
+
+.purple_word {
+  font-family: 'source-sans-pro', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #c271ff;
 }
 
+.running_title {
+  font-family: 'source-sans-pro', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.bold_sixteen {
+  font-family: 'source-sans-pro', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.regular_fourteen {
+  font-family: 'source-sans-pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.purple_fourteen {
+  font-family: 'source-sans-pro', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #c271ff;
+}
+
+.semi_transparent {
+  color: #07162980;
+}
+
+.purple_buttons {
+  border-radius: 22px;
+  width: 162px;
+  height: 44px;
+  border: none;
+  background-color: #c271ff;
+  font-family: 'source-sans-pro', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  color: #ffffff;
+  box-shadow: 0 2px 20px 0 #000000;
+}
+
+.semibold_eighteen {
+  font-family: 'source-sans-pro', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/*Body setting*/
 body {
   width: 1440px;
-  background-color: var(--white);
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+/*Header*/
 header {
   display: flex;
   justify-content: center;
 }
 
 #head {
-  padding-top: 30px;
-  width: 1100px;
+  padding-top: 35px;
+  width: 1103px;
   height: 30px;
   position: absolute;
   display: flex;
@@ -44,42 +97,321 @@ header {
 }
 
 #menu > a {
-  font-family: 'Source Sans Pro';
+  font-family: 'source-sans-pro', sans-serif;
   font-size: 12px;
   font-weight: bold;
   color: #ffffff;
   text-decoration: none;
 }
 
+/*First section - Main part*/
 #main_part {
+  width: 1440px;
   height: 1093px;
   background-image: url('img/background.png');
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'source-sans-pro', sans-serif;
 }
 
 #main_part_top {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #main_part_top > h1 {
-  font-family: 'Source Sans Pro';
+  width: 688px;
+  height: 151px;
+  font-family: 'source-sans-pro', sans-serif;
+  font-weight: 700;
   font-size: 120px;
-  font-weight: bold;
-  color: #ffffff;
+  margin-top: 220px;
+}
+
+#main_part_top > p {
+  width: 253px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+}
+
+#main_part_top > button {
+  margin-top: 38px;
 }
 
 #main_part_bottom {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+#main_part_bottom > h2 {
+  width: 261px;
+  height: 40px;
+  margin-top: 168px;
 }
 
 #pros {
   width: 1009px;
+  height: 237px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 87px;
+}
+
+#pros > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#pros > div > img {
+  width: 150px;
+  height: 150px;
+}
+
+#pros > div > h3 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+#pros > div > p {
+  font-size: 16px;
+  font-style: italic;
+}
+
+/*Part 1 - Quote*/
+#part_1_testimonials {
+  height: 392px;
+  background-color: #c271ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#part_1_div {
+  width: 943px;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#part_1_div > img {
+  width: 160px;
+  height: 160px;
+}
+
+#part_1_text {
+  width: 730px;
+  height: 158px;
+  font-family: 'source-sans-pro', sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+#part_1_text > blockquote {
+  width: 730px;
+  height: 68px;
+  font-weight: 400;
+}
+
+#part_1_text > #name {
+  height: 34px;
+  font-weight: 700;
+  margin-top: 22px;
+}
+
+#part_1_text > #work {
+  height: 34px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/*Part 2 - Tutorials*/
+#part_2_tutorials {
+  height: 624px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tutos_title {
+  width: 294px;
+  height: 40px;
+  margin-top: 87px;
+  margin-bottom: 75px;
+}
+
+#tutos_container {
+  width: 1111px;
+  height: 335px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 87px;
+}
+
+.tuto_container {
+  width: 255px;
+  height: 335px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating_author {
+  width: 129px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating_author > img {
+  width: 30px;
+  height: 30px;
+}
+
+.stars_and_time {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Part 3 - Free membership*/
+#part_3_free_membership {
+  height: 502px;
+  background-color: #071629;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#free_title {
+  width: 234px;
+  height: 40px;
+  margin-top: 70px;
+}
+
+#free_texts {
+  width: 1112px;
+  height: 153px;
+  margin-top: 58px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.free_text {
+  width: 257px;
+  height: 153px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.free_text > img {
+  height: 35px;
+  width: 44px;
+}
+
+.free_text > p {
+  line-height: 26px;
+}
+
+#part_3_free_membership > button {
+  margin-top: 85px;
+}
+
+/*Part 4 - FAQ*/
+#part_4_faq {
+  height: 858px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#faq_title {
+  width: 136px;
+  height: 75px;
+  margin-top: 67px;
+  font-family: 'source-sans-pro', sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+}
+
+#faq_container {
+  width: 920px;
+  height: 558px;
+  margin-top: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq_row {
+  width: 920px;
+  height: 242px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq_text {
+  width: 350px;
+  height: 242px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Part 5 - Footer*/
+#part_5_footer {
+  height: 249px;
+  background-color: #071629;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer_images {
+  width: 1035px;
+  height: 35px;
+  margin-top: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#footer_images > img {
+  width: 169px;
+  height: 30px;
+}
+
+#socials {
+  width: 130px;
+  height: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#copyright {
+  width: 96px;
+  height: 15px;
+  margin-top: 70px;
+  color: #ffffff59;
+  font-family: 'source-sans-pro', sans-serif;
+  font-size: 12px;
 }
