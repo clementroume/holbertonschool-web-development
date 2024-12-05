@@ -9,6 +9,7 @@ Welcome to the **CSS Advanced** project repository! This project is part of the 
 - [Description](#description)
 - [Project Structure](#project-structure)
 - [Learning Objectives](#learning-objectives)
+- [Layout](#layout)
 
 ---
 
@@ -56,3 +57,7 @@ By the end of this project, the following concepts are thoroughly understood:
 - **Deployment**: Publishing a webpage online using GitHub Pages for public access.
 
 This project solidifies understanding of CSS and prepares for advanced web design and layout tasks.
+
+## Layout
+
+![Layout](layout.png)
