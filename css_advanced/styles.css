@@ -1,4 +1,6 @@
-/*General reset for consistency*/
+/* =========================================
+   Global Reset
+   ========================================= */
 *,
 ::before,
 ::after {
@@ -7,8 +9,9 @@
   box-sizing: border-box;
 }
 
-/*General Class Selectors*/
-
+/* =========================================
+   General Text Styles
+   ========================================= */
 .purple_word {
   font-family: 'source-sans-pro', sans-serif;
   font-size: 32px;
@@ -46,6 +49,15 @@
   color: #07162980;
 }
 
+.semibold_eighteen {
+  font-family: 'source-sans-pro', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* =========================================
+   Button Styles
+   ========================================= */
 .purple_buttons {
   border-radius: 22px;
   width: 162px;
@@ -60,13 +72,11 @@
   box-shadow: 0 2px 20px 0 #000000;
 }
 
-.semibold_eighteen {
-  font-family: 'source-sans-pro', sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-}
+/* =========================================
+   Layout and Structure
+   ========================================= */
 
-/*Body setting*/
+/* Body */
 body {
   width: 1440px;
   background-color: #ffffff;
@@ -74,7 +84,9 @@ body {
   margin-right: auto;
 }
 
-/*Header*/
+/* =========================================
+   Header Styles
+   ========================================= */
 header {
   display: flex;
   justify-content: center;
@@ -104,7 +116,9 @@ header {
   text-decoration: none;
 }
 
-/*First section - Main part*/
+/* =========================================
+   First section - Main part
+   ========================================= */
 #main_part {
   width: 1440px;
   height: 1093px;
@@ -188,7 +202,9 @@ header {
   font-style: italic;
 }
 
-/*Part 1 - Quote*/
+/* =========================================
+   Second section - Part 1 - Testimonials
+   ========================================= */
 #part_1_testimonials {
   height: 392px;
   background-color: #c271ff;
@@ -235,7 +251,9 @@ header {
   font-style: italic;
 }
 
-/*Part 2 - Tutorials*/
+/* =========================================
+   Third section - Part 2 - Tutorials
+   ========================================= */
 #part_2_tutorials {
   height: 624px;
   display: flex;
@@ -285,7 +303,9 @@ header {
   justify-content: space-between;
 }
 
-/*Part 3 - Free membership*/
+/* =========================================
+   Fourth section - Part 3 - Free membership
+   ========================================= */
 #part_3_free_membership {
   height: 502px;
   background-color: #071629;
@@ -332,7 +352,9 @@ header {
   margin-top: 85px;
 }
 
-/*Part 4 - FAQ*/
+/* =========================================
+   Fifth section - Part 4 - FAQ
+   ========================================= */
 #part_4_faq {
   height: 858px;
   display: flex;
@@ -375,7 +397,9 @@ header {
   justify-content: space-between;
 }
 
-/*Part 5 - Footer*/
+/* =========================================
+   Footer Styles
+   ========================================= */
 #part_5_footer {
   height: 249px;
   background-color: #071629;
